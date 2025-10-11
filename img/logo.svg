@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="16.8125"
+     inkscape:cx="24"
+     inkscape:cy="25.189591"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1432"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="2.8550186"
+       y="6.3048327"
+       width="41.695167"
+       height="28.431227"
+       id="rect3" />
+    <rect
+       x="2.2007435"
+       y="2.4981413"
+       width="41.576208"
+       height="41.576208"
+       id="rect2" />
+  </defs>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#00a600"
+       id="rect1"
+       width="48.118961"
+       height="48.118958"
+       x="-0.059479553"
+       y="-0.11895911" />
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="fill:#00a600;text-orientation:auto;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2)" />
+    <text
+       xml:space="preserve"
+       id="text3"
+       style="fill:#ffffff;text-orientation:auto;text-align:start;writing-mode:lr-tb;direction:ltr;fill-opacity:1;white-space:pre;shape-inside:url(#rect3)" />
+    <text
+       xml:space="preserve"
+       style="text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:0;fill:#ffffff;fill-opacity:1"
+       x="17.18959"
+       y="25.040892"
+       id="text4"><tspan
+         id="tspan4"
+         x="17.18959"
+         y="25.040892" /></text>
+    <text
+       xml:space="preserve"
+       style="text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1"
+       x="16.713755"
+       y="25.754646"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:29.3333px;line-height:0;text-align:start;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:nonzero"
+       x="5.1747217"
+       y="33.18959"
+       id="text6"
+       inkscape:highlight-color="#000000"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         x="5.1747217"
+         y="33.18959"
+         style="font-size:29.3333px;line-height:0px;text-align:start;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;fill-rule:nonzero">KG</tspan></text>
+  </g>
+</svg>
