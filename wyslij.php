@@ -7,8 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($imie && $nazwisko && $email && $tresc) {
         $to = "kontakt@klaudiagotuje.pl";
-        $temat = "Wiadomość ze strony KlaudiaGotuje.pl";
-        $wiadomosc = "Imię: $imie\nNazwisko: $nazwisko\nEmail: $email\n\nTreść:\n$tresc";
+        $temat = "Wiadomosc ze strony KlaudiaGotuje.pl";
+        $wiadomosc = "Imie: $imie\nNazwisko: $nazwisko\nEmail: $email\n\nTresc:\n$tresc";
 
         $headers = "From: $email";
 
