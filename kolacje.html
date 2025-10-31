@@ -6,21 +6,31 @@
   <title>Kolacje - KlaudiaGotuje</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg" href="img/logo.svg">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
 </head>
 
 <body>
   <header>
-    <h1>Kolacje</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Strona główna</a></li>
-        <li><a href="sniadania.html">Śniadania</a></li>
-        <li><a href="obiady.html">Obiady</a></li>
-        <li><a href="przekaski.html">Przekąski</a></li>
-        <li><a href="desery.html">Desery</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
+<div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+      <a class="brand" href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;">
+        <img src="img/logo.svg" alt="Klaudia Gotuje" width="40" height="40">
+        <span>Kolacje</span>
+      </a>
+
+      <div style="display:flex;align-items:center;gap:12px;">
+        <input id="recipe-search" type="search" placeholder="Szukaj przepisów..." aria-label="Szukaj przepisów">
+        <nav aria-label="Główne menu">
+          <ul style="display:flex;gap:12px;list-style:none;margin:0;padding:0;">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="sniadania.html">Śniadania</a></li>
+            <li><a href="obiady.html">Obiady</a></li>
+            <li><a href="przekaski.html">Przekąski</a></li>
+            <li><a href="desery.html">Desery</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -59,6 +69,9 @@
   <footer>
     <p>&copy; 2025 Klaudia Gotuje</p>
   </footer>
-</body>
 
+  <script src="search.js"></script>
+
+
+</body>
 </html>

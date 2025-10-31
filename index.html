@@ -1,81 +1,99 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Klaudia Gotuje</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg" href="img/logo.svg">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style-extra.css">
 </head>
-
 <body>
   <header>
-    <h1>Klaudia Gotuje</h1>
-    <nav>
-      <ul>
-        <li><a href="sniadania.html">Śniadania</a></li>
-        <li><a href="obiady.html">Obiady</a></li>
-        <li><a href="kolacje.html">Kolacje</a></li>
-        <li><a href="przekaski.html">Przekąski</a></li>
-        <li><a href="desery.html">Desery</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="container" style="display:flex;align-items:center;gap:12px;justify-content:space-between;">
+      <a class="brand" href="/" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;">
+        <img src="img/logo.svg" alt="Klaudia Gotuje logo" style="width:40px;height:40px;">
+        Klaudia Gotuje
+      </a>
 
-  <main>
-    <section style="text-align:center;">
-      <h2>Witaj na KlaudiaGotuje.pl</h2>
-      <p style="margin: 20px auto; max-width: 600px;">
-        Odkryj pyszne i zdrowe przepisy na każdą porę dnia – od śniadań po desery.
-        Wszystko w roślinnym stylu, z pasją do gotowania. 🌱
-      </p>
-      <p>Jesli masz jakis swoj przepis ktorym chial/chciala bys sie podzielic wejdz w zakladke "Kontakt" wypelni
-        formularz i wysli. Po odczytaniu e-maila twoj przpis zostanie dodany na strone. 😎</p>
-    </section>
-
-    <div class="recipe-grid">
-      <div class="recipe-card">
-        <h3>🥑 Śniadania</h3>
-        <p>Lekkie, pożywne i szybkie propozycje na dobry początek dnia.</p>
-      </div>
-      <div class="recipe-card">
-        <h3>🍝 Obiady</h3>
-        <p>Proste i domowe dania, które nasycą i zachwycą smakiem.</p>
-      </div>
-      <div class="recipe-card">
-        <h3>🍲 Kolacje</h3>
-        <p>Lekkie i sycące kolacje na zakończenie dnia.</p>
-      </div>
-      <div class="recipe-card">
-        <h3>🥨 Przekąski</h3>
-        <p>Szybkie i zdrowe przekąski idealne na przerwę lub imprezę.</p>
-      </div>
-      <div class="recipe-card">
-        <h3>🍰 Desery</h3>
-        <p>Słodkości bez wyrzutów sumienia – roślinne i pyszne!</p>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <input id="recipe-search" type="search" placeholder="Szukaj przepisów..." aria-label="Szukaj przepisów" style="padding:8px 12px;border-radius:8px;border:1px solid rgba(0,0,0,0.08);min-width:220px;">
+        <nav aria-label="Główne menu">
+          <ul>
+            <li><a href="sniadania.html">Śniadania</a></li>
+            <li><a href="obiady.html">Obiady</a></li>
+            <li><a href="kolacje.html">Kolacje</a></li>
+            <li><a href="przekaski.html">Przekąski</a></li>
+            <li><a href="desery.html">Desery</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Witaj na KlaudiaGotuje.pl</h2>
+      <p class="lead">
+        Odkryj pyszne i zdrowe przepisy na każdą porę dnia — od śniadań po desery. Wszystko w roślinnym stylu, z pasją do gotowania.
+      </p>
+      <p class="small">
+        Jeśli masz swój przepis, którym chciałbyś lub chciałabyś się podzielić, wejdź w zakładkę Kontakt, wypełnij formularz i wyślij. Po odczytaniu e-maila Twój przepis zostanie dodany na stronę.
+      </p>
+    </section>
+
+    <section>
+      <div id="no-results" style="display:none;text-align:center;margin-top:12px;color:#556b2f;">Brak wyników wyszukiwania</div>
+
+      <div class="recipe-grid" role="list" id="recipe-list">
+        <a class="card-link" href="sniadania.html" role="listitem">
+          <article class="recipe-card">
+            <h3>🥑 Śniadania</h3>
+            <p>Lekkie, pożywne i szybkie propozycje na dobry początek dnia.</p>
+          </article>
+        </a>
+
+        <a class="card-link" href="obiady.html" role="listitem">
+          <article class="recipe-card">
+            <h3>🍝 Obiady</h3>
+            <p>Proste i domowe dania, które nasycą i zachwycą smakiem.</p>
+          </article>
+        </a>
+
+        <a class="card-link" href="kolacje.html" role="listitem">
+          <article class="recipe-card">
+            <h3>🍲 Kolacje</h3>
+            <p>Lekkie i sycące kolacje na zakończenie dnia.</p>
+          </article>
+        </a>
+
+        <a class="card-link" href="przekaski.html" role="listitem">
+          <article class="recipe-card">
+            <h3>🥨 Przekąski</h3>
+            <p>Szybkie i zdrowe przekąski idealne na przerwę lub imprezę.</p>
+          </article>
+        </a>
+
+        <a class="card-link" href="desery.html" role="listitem">
+          <article class="recipe-card">
+            <h3>🍰 Desery</h3>
+            <p>Słodkości bez wyrzutów sumienia — roślinne i pyszne!</p>
+          </article>
+        </a>
+      </div>
+    </section>
   </main>
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5215998614826017"
-    crossorigin="anonymous"></script>
-  <!-- Reklama -->
-  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5215998614826017" data-ad-slot="1127770488"
-    data-ad-format="auto" data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5215998614826017" crossorigin="anonymous"></script>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5215998614826017" data-ad-slot="1127770488" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
 
   <footer>
-    <p>&copy; 2025 Klaudia Gotuje</p>
+    <div class="container">
+      <p>© 2025 Klaudia Gotuje</p>
+    </div>
   </footer>
-</body>
 
+  <script src="search.js"></script>
+</body>
 </html>
