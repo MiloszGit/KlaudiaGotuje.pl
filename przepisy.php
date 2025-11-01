@@ -6,7 +6,7 @@ header('Content-Type: text/html; charset=utf-8');
 // 🔧 Dane połączenia z bazą
 $servername = "n128.domenomania.pl";
 $username = "dm73971_klaudiagotuje";
-$password = "Citroen2017?";
+$password = "";
 $dbname = "dm73971_Klaudia_gotuje_db";
 
 // 🔌 Połączenie z bazą danych
